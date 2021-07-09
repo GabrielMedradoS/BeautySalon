@@ -16,3 +16,17 @@ for (const link of links) {
         nav.classList.remove('show')
     })
 }
+
+/* Sombra no header da pagina ao dar scroll */
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight //quando esta em uma certa altura do header
+
+window.addEventListener('scroll', function() {
+    if(window.scrollY >= navHeight) { //se a janela for maior ou igual a altura do header 
+    //maior
+    header.classList.add('scroll')
+    } else {
+    //menor
+    header.classList.remove('scroll')
+    }
+})

@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OriginSix</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header id="header">
-        <nav class="container "> 
+    <header id="header" class="scroll">
+        <nav class="container "> <!-- S H O W -->
            <a class="logo" href="#">beauty<span>salon</span>.</a> 
            <!-- MENU -->
             <div class="menu">
@@ -30,8 +31,8 @@
                 </ul>
             </div>
             <!-- MENU -->
-            <div class="toggle icon-menu"><i class="material-icons">format_list_bulleted</i></div>
-            <div class="toggle icon-close"><i class="material-icons">close</i></div>
+            <div class="toggle icon-menu"></div></i>
+            <div class="toggle icon-close"></div></i>
         </nav>    
     </header>
     
@@ -39,7 +40,7 @@
         <section class="section" id="home">
             <div class="container grid">               
                 <div class="image">
-                    <img src="assets/Img 1.svg" alt="Mulher penteando outra mulher">
+                    <img src="assets/images/Img 1.svg" alt="Mulher penteando outra mulher">
                 </div>
                 <div class="text">
                     <h2 class="title">Saúde natural para os cabelos</h2>
@@ -54,7 +55,7 @@
         <section class="section" id="about">
             <div class="container grid">
                 <div class="image">
-                    <img src="assets/Img 2.svg" alt="3 cabeleireiras">
+                    <img src="assets/images/Img 2.svg" alt="3 cabeleireiras">
                 </div>
                 <div class="text">
                     <h2 class="title">Sobre nós</h2>
@@ -71,24 +72,42 @@
        
         <section class="section" id="services">
             <div class="container grid">
-                <header></header>
-                <div class="cards">
+                <header>
+                    <h2 class="title">Serviços</h2>
+                    <p>Com mais de 10 anos no mercado, o <b>Beautysalon</b> já conquistou
+                        clientes de inúmeros países com seus tratamentos exclusivos e 
+                        totalmente naturais
+                    </p>
+                </header>
+                <div class="cards grid">
                     <div class="card">
-                        <div class="icon-woman-hair"></div>
-                        <h3 class="title">Terapia capilar</h3>
-                        <p></p>
+                      <i class="icon-woman-hair"></i>
+                      <h3 class="title">Terapia capilar</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                        distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                        asperiores
+                      </p>
                     </div>
                     <div class="card">
-                        <div class="icon-trim"></div>
-                        <h3 class="title">Cortes</h3>
-                        <p></p>
+                      <i class="icon-trim"></i>
+                      <h3 class="title">Cortes</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                        distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                        asperiores
+                      </p>
                     </div>
                     <div class="card">
-                        <div class="icon-cosmetics"></div>
-                        <h3 class="title">Tratamentos</h3>
-                        <p></p>
+                      <i class="icon-cosmetic"></i>
+                      <h3 class="title">Tratamentos</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                        distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                        asperiores
+                      </p>
                     </div>
-                </div>
+                  </div>
             </div>
         </section>
 
