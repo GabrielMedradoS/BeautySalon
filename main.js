@@ -17,11 +17,22 @@ for (const link of links) {
     })
 }
 
-/* Sombra no header da pagina ao dar scroll */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight //quando esta em uma certa altura do header
+/* Back to top  */
+function backToTop() {
+    const backToTopButton = document.querySelector('.back-to-top')
+        
+    if (window.scrollY >= 560) {
+            backToTopButton.classList.add('show')
+        } else {
+            backToTopButton.classList.remove('show')
+        }
+}
 
-window.addEventListener('scroll', function() {
+/* Sombra no header da pagina ao dar scroll */
+function changeHeaderWhenScroll() {
+    const header = document.querySelector('#header')
+    const navHeight = header.offsetHeight //quando esta em uma certa altura do header
+
     if(window.scrollY >= navHeight) { //se a janela for maior ou igual a altura do header 
     //maior
     header.classList.add('scroll')
@@ -29,6 +40,11 @@ window.addEventListener('scroll', function() {
     //menor
     header.classList.remove('scroll')
     }
+}
+
+window.addEventListener('scroll', function() {
+    backToTop()
+    changeHeaderWhenScroll()
 })
 
 /* testimonials swiper */
@@ -48,23 +64,13 @@ const scrollReveal = ScrollReveal({
     duration: 700,  /* milisegundos */
     reset: true /* quando chegar no final da pagina a animaçao volta */
 })
-
+/* nao pode ter virgula no testimonials */
 scrollReveal.reveal(
     `#home .image, #home .text,
     #about .image, #about .text,
     #services header, #services .card,
-    #testimonials header, #testimonials .testimonials,
+    #testimonials header, #testimonials .testimonials
     #contact .text, #contact .links,
     #footer .brand, #footer .social`,
     { interval: 100 } 
 )
-
-/* Back to top  */
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', function() {
-    if (window.scrollY >= 560) {
-        backToTopButton.classList.add('show')
-    } else {
-        backToTopButton.classList.remove('show')
-    }
-})
