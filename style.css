@@ -15,7 +15,11 @@
     --title-color: hsl(var(--hue) 41% 10%);
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
-    --body-color: hsl(0 0% 98%)
+    --body-color: hsl(0 0% 98%);
+
+    /* fonts */
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
 }
 
 /****** BASE ********************************************************* */
@@ -110,10 +114,6 @@ ul li {
     background: var(--body-color);
 }
 
-main {
-    margin-top: calc(var(--header-height) + 2rem);
-}
-
 /****** LOGO ********************************************************* */
 .container .logo {
     font-family: "Poppins", sans-serif;
@@ -176,7 +176,7 @@ main {
     width: 100%;
 }
 
-/****** MOSTRAR MENU ************************************************** */
+/****** SHOW MENU ************************************************** */
 nav.show ul.grid {
     gap: 4rem;
     text-align: center;
@@ -236,7 +236,7 @@ nav.show div.icon-close {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title {
@@ -245,6 +245,10 @@ nav.show div.icon-close {
 
 .section header {
     margin-bottom: 4rem;
+}
+
+.section .subtitle {
+    font-size: var(--subtitle-font-size);
 }
 
 /****** HOME ****************************************************** */
@@ -291,6 +295,7 @@ nav.show div.icon-close {
 
 #home .text p {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 /* **** ABOUT ****************************************************** */
@@ -465,6 +470,10 @@ footer {
     background-color: var(--base-color);
 }
 
+footer.section {
+    padding: 4rem 0;
+}
+
 /* por padrao o display da tag a é inline */
 footer .brand .logo {
     display: inline-block;
@@ -479,6 +488,11 @@ footer .brand p {
 footer i {
     font-size: 1.5rem;
     color: var(--text-color-light);
+}
+
+footer .social {
+    grid-auto-flow: column;
+    width: fit-content;
 }
 
 footer .social a {
@@ -517,4 +531,39 @@ footer .social a:hover {
     visibility: visible;
     opacity: 1;
     transform: translate(0);
+}
+
+/****** MEDIA QUERIES ****************************************************************** */
+@media screen and (min-width: 1200px) {
+    main {
+        margin-top: var(--header-height);
+    }
+
+    .section {
+        padding: 10rem 0;
+    }
+
+    #header .container .menu  {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    #header .container .menu  ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #header .container .menu ul li a.title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
 }
