@@ -57,6 +57,10 @@ body img {
     height: auto;
 }
 
+ul li {  
+    list-style: none;
+}
+
 /******* DIVIDERS ************************************************************ */
 .divider-1 {
     height: 1px;
@@ -168,14 +172,10 @@ main {
     width: 100%;
 }
 
-nav ul li {
-    text-align: center;
-    list-style: none;
-}
-
 /****** MOSTRAR MENU ************************************************** */
 nav.show ul.grid {
     gap: 4rem;
+    text-align: center;
 }
 
 #header nav.show .menu {
@@ -422,4 +422,32 @@ nav.show div.icon-close {
 
 .swiper-pagination-bullet-active {
     background-color: var(--base-color);
+}
+
+/******** CONTATO ******************************************************************* */
+#contact .grid {
+    gap: 4rem;
+}
+
+#contact .text p {
+    margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+     font-size:  1.5rem;
+     margin-right:  0.625rem;
+}
+
+#contact ul.grid {
+    gap: 2rem;
+}
+
+#contact ul li {
+    display: flex;
+    align-items: center;
+}
+
+#contact ul li i {
+    color: var(--base-color);
 }
