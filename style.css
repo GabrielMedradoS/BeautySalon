@@ -295,7 +295,6 @@ nav.show div.icon-close {
 
 #home .text p {
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 /* **** ABOUT ****************************************************** */
@@ -539,10 +538,21 @@ footer .social a:hover {
         margin-top: var(--header-height);
     }
 
+    .container {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .section {
         padding: 10rem 0;
     }
 
+    .button {
+        height: 3.125rem;
+    }
+
+    /****** HEADER ****************************************************************** */
     #header .container .menu  {
         opacity: 1;
         visibility: visible;
@@ -555,9 +565,36 @@ footer .social a:hover {
     }
 
     #header .container .menu ul li a.title {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
         font-size: 1rem;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    /****** HOME ****************************************************************** */       
+    #home .container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    
+    #home .image {
+        order: 1; /* troca a ordem dos elementos, no caso a escrita vira antes da foto */
+    }
+
+    #home .text {
+        order: 0;
+        max-width: 24rem;
+        text-align: left;
+    }
+
+    /****** ABOUT ****************************************************************** */
+    #about .container {
+        margin: 0 auto;
+        grid-auto-flow: column;
     }
 }
 
