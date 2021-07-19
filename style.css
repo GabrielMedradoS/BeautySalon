@@ -115,15 +115,19 @@ main {
 }
 
 /****** LOGO ********************************************************* */
-#header .container .logo {
+.container .logo {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 1.31rem;
     color: var(--title-color);
 }
 
-#header .container .logo span {
+.container .logo span {
     color: var(--base-color);
+}
+
+.container .logo-alt span {
+    color: var(--body-color);
 }
 
 /******** NAVIGATION ************************************************ */
@@ -243,10 +247,6 @@ nav.show div.icon-close {
     margin-bottom: 4rem;
 }
 
-.section header b {
-    color: var(--base-color);
-}
-
 /****** HOME ****************************************************** */
 #home {
     overflow: hidden;
@@ -329,6 +329,14 @@ nav.show div.icon-close {
 }
 
 /****** SERVICES ****************************************************** */
+.section header b {
+    color: var(--title-color);
+}
+
+.section header span {
+    color: var(--base-color);
+}
+
 .cards.grid {
     gap: 1.5rem;
 }
@@ -450,4 +458,29 @@ nav.show div.icon-close {
 
 #contact ul li i {
     color: var(--base-color);
+}
+
+/******** FOOTER ******************************************************************* */
+footer {
+    background-color: var(--base-color);
+}
+
+/* por padrao o display da tag a é inline */
+footer .brand .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    margin-right: 2rem;
 }
