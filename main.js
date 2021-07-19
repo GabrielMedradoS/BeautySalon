@@ -33,10 +33,27 @@ window.addEventListener('scroll', function() {
 
 /* testimonials swiper */
 const swiper = new Swiper('.swiper-container', {
-    slidePerView: 1, /* exibiçao de 1 slide */
+    slidePerView: 1, /* exibiçao de 1 slide */ 
     pagination: {
         el: '.swiper-pagination'
     },
     mousewheel: true, /* roda do mouse */
     keyboard: true
 })
+
+/* Scrollreveal: Mostrar elementos na pagina */
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,  /* milisegundos */
+    reset: true /* quando chegar no final da pagina a animaçao volta */
+})
+
+scrollReveal.reveal(
+    `#home .image, #home .text,
+    #about .image, #about .text,
+    #services header, #services .card,
+    #testimonials header, #testimonials .testimonials
+    #contact .text, #contact .links`,
+    { interval: 100 } 
+)
