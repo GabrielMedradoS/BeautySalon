@@ -13,8 +13,12 @@
     <!-- icons -->
     <link rel="stylesheet" href="assets/fonts/style.css">
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- styles -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header id="header" class="scroll">
@@ -118,51 +122,56 @@
         <!-- TESTIMONIALS -->
         <section class="section" id="testimonials">
             
-            <div class="container grid">
+            <div class="container">
                 <header>
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
                 
-                <div class="testimonials">
-                    <div class="testimonials">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Perspiciatis eos alias quo non est ad veniam rem minus 
-                            </p>
-                            <cite>
-                                <img src="assets/images/fotos/foto 1.jpg" alt="photo 1"> Wanessa Souza
-                            </cite>
-                        </blockquote>
-                    </div>
+                <div class="testimonials swiper-container">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="testimonials swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Perspiciatis eos alias quo non est ad veniam rem minus 
+                                </p>
+                                <cite>
+                                    <img src="assets/images/fotos/foto 1.jpg" alt="photo 1"> Wanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonials swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Perspiciatis eos alias quo non est ad veniam rem minus 
+                                </p>
+                                <cite>
+                                    <img src="assets/images/fotos/foto 2.jpg" alt="photo 2"> Franciele Venega
+                                </cite>
+                            </blockquote>
+                        </div>
+    
+                        <div class="testimonials swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Perspiciatis eos alias quo non est ad veniam rem minus 
+                                </p>
+                                <cite>
+                                    <img src="assets/images/fotos/foto 3.jpg" alt="photo 3"> Valeska Frabris
+                                </cite>
+                            </blockquote>
+                        </div>
 
-                    <div class="testimonials">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Perspiciatis eos alias quo non est ad veniam rem minus 
-                            </p>
-                            <cite>
-                                <img src="assets/images/fotos/foto 2.jpg" alt="photo 2"> Franciele Venega
-                            </cite>
-                        </blockquote>
                     </div>
-
-                    <div class="testimonials">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Perspiciatis eos alias quo non est ad veniam rem minus 
-                            </p>
-                            <cite>
-                                <img src="assets/images/fotos/foto 3.jpg" alt="photo 3"> Valeska Frabris
-                            </cite>
-                        </blockquote>
-                    </div>
-
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -170,6 +179,10 @@
         <!-- CONTACT -->
     </main>
 
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- main -->
     <script src="main.js"></script>
 </body>
 </html>

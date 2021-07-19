@@ -30,3 +30,13 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scroll')
     }
 })
+
+/* testimonials swiper */
+const swiper = new Swiper('.swiper-container', {
+    slidePerView: 1, /* exibiçao de 1 slide */
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    mousewheel: true, /* roda do mouse */
+    keyboard: true
+})
