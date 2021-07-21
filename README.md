@@ -5,10 +5,7 @@
 <br>
 
 ### 💻 Projeto
-O projeto é criar um site onde o usuario pode criar salas como dono ou entrar em um sala já criada para fazer perguntas 
-O dono terá o poder de marcar adicionar perguntas, marca-las como lida ou excluí-las
-
-Ideal para responder perguntas durante streams 
+Criar a pagina inicial de um salão de beleza 
 
 ### 🛠 Tecnologias
 <div>
