@@ -42,9 +42,33 @@ function changeHeaderWhenScroll() {
     }
 }
 
+/* Marcar o header ao scrollar a pagina */
+const sections = document.querySelectorAll('main section[id]')
+function activateAtCurrentSection() {
+    // ir testando os melhores valores 
+    const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4  /* separei a pagina em 8 parte e peguei 1/4 da pagina  */
+
+    for (const section of sections) {
+        /* DIFF DE ALTURA entre cada section  */
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.offsetHeight
+        const sectionId = section.getAttribute('id')
+        
+        const checkpointStart = checkpoint >= sectionTop
+        const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+        if(checkpointStart && checkpointEnd) {
+            document.querySelector(`nav ul li a[href*=${sectionId}]`).classList.add('active')
+        } else {
+            document.querySelector(`nav ul li a[href*=${sectionId}]`).classList.remove('active')
+        }
+    }
+}
+
 window.addEventListener('scroll', function() {
     backToTop()
     changeHeaderWhenScroll()
+    activateAtCurrentSection()
 })
 
 /* testimonials swiper */
