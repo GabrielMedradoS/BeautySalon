@@ -1,8 +1,5 @@
 ## BeautySalon
-<h4 align="center"> 
-
-</h4>
-<br>
+  <img alt="imageBeautysalon" src=".github/Beautysalon..png" width="100%">
 
 ### 💻 Projeto
 Criar a pagina inicial de um salão de beleza 
