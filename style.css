@@ -206,6 +206,11 @@ nav.show ul.grid {
     text-align: center;
 }
 
+/* para nao exibir os href ao encolher a pagina e bugar o site */
+nav .menu ul {
+  display: none;
+}
+
 #header nav.show .menu {
     opacity: 1;
     visibility: visible;
