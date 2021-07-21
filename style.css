@@ -580,8 +580,9 @@ footer .social a:hover {
         --webkit-font-smoothing: antialiased;
     }
 
-    #header nav .menu a.active {
+    #header nav .menu a.title.active {
         font-weight: bold;
+        --webkit-font-smoothing: auto;
     }
 
     nav .icon-menu {
