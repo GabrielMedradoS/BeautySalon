@@ -33,6 +33,8 @@ body {
     font-size: 1rem;
     color: var(--text-color);
     background-color: var(--body-color);
+
+    -webkit-font-smoothing: antialiased;
 }
 
 body .title {
@@ -72,7 +74,7 @@ ul li {
     background: linear-gradient(
         270deg, 
         hsla(var(--hue), 65%, 88%, 0.34),
-        hsla(var(--hue), 36%, 57%, 1));
+        hsla(var(--hue), 36%, 57%, 1))
 }
 
 /****** BUTTONS *********************************************************** */ 
@@ -92,6 +94,33 @@ ul li {
     background-color: var(--base-color-alt);
 }
 
+/**** CONTAINER/SECTIONS **************************************************** */
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.section {
+    padding: calc(5rem + var(--header-height)) 0;
+}
+
+.section .title {
+    margin-bottom: 1rem;
+}
+
+.section header {
+    margin-bottom: 4rem;
+}
+
+.section .subtitle {
+    font-size: var(--subtitle-font-size);
+}
+
 /****** HEADER ************************************************************* */
 #header {
     border-bottom: 1px solid #e4e4e4;
@@ -104,6 +133,10 @@ ul li {
     left: 0;
     z-index: 100;
     background: var(--body-color);
+}
+
+#header.scroll {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 /****** LOGO *************************** */
@@ -122,10 +155,7 @@ ul li {
     color: var(--body-color);
 }
 
-/******** NAVIGATION ****************** */
-#header.scroll {
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-}
+/******** NAVIGATION **************************************************** */
 
 #header nav {
     height: var(--header-height);
@@ -216,33 +246,6 @@ nav.show div.icon-close {
     visibility: visible;
     opacity: 1;
     top: 1.5rem;
-}
-
-/**** CONTAINER **************************************************** */
-.container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.grid {
-    display: grid;
-    gap: 2rem;
-}
-
-.section {
-    padding: calc(5rem + var(--header-height)) 0;
-}
-
-.section .title {
-    margin-bottom: 1rem;
-}
-
-.section header {
-    margin-bottom: 4rem;
-}
-
-.section .subtitle {
-    font-size: var(--subtitle-font-size);
 }
 
 /****** HOME ****************************************************** */
