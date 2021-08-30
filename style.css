@@ -430,6 +430,10 @@ nav.show div.icon-close {
 }
 
 /******** SWIPER ******************************************************************* */
+.swiper-pagination { /* swiper bugFix */
+    position: relative;
+}
+
 .swiper-slide {
     height: auto;
     padding: 4rem 1rem;
