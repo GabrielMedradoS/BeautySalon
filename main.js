@@ -87,14 +87,14 @@ const swiper = new Swiper('.swiper-container', {
     }
 })
 
-/* Scrollreveal: Mostrar elementos na pagina */
-const scrollReveal = ScrollReveal({
+// Scrollreveal: Mostrar elementos na pagina 
+/* const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 700,  /* milisegundos */
-    reset: true /* quando chegar no final da pagina a animaçao volta */
+    duration: 700,  // milisegundos 
+    reset: true // quando chegar no final da pagina a animaçao volta
 })
-/* nao pode ter virgula no testimonials */
+// nao pode ter virgula no testimonials 
 scrollReveal.reveal(
     `#home .image, #home .text,
     #about .image, #about .text,
@@ -103,4 +103,4 @@ scrollReveal.reveal(
     #contact .text, #contact .links,
     #footer .brand, #footer .social`,
     { interval: 100 } 
-)
+) */
