@@ -11,14 +11,15 @@
     </a>
 </p>
 
-  ### Layout 🚧
-  <img alt="imageBeautysalon" src=".github/Beautysalon..png" width="100%">
   <p align="center">
     <a href="#projeto-">Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#tecnologias-">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#layout-">Layout</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#licença-%EF%B8%8F">Licença</a>
 </p>
+
+  ### Layout 🚧
+  <img alt="imageBeautysalon" src=".github/Beautysalon..png" width="100%">
 
 ## Projeto 💻
 - Criar uma landing page de um salão de beleza com a ajuda do prof Mayk Brito Rocketseat
