@@ -1,5 +1,16 @@
 ## BeautySalon
 
+<p align="center">
+    <img alt="Platform" src="https://img.shields.io/static/v1?label=Platform&message=PC&color=b0e0e6&labelColor=white">
+    <a href="">
+        <img src="https://img.shields.io/badge/BeautySalon-NLW Discover-b0e0e6?&labelColor=white"></img>
+    </a>
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/BeautySalon?color=b0e0e6&labelColor=white">
+    <a href="https://github.com/GabrielMedradoS/BeautySalon/blob/master/License">
+        <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=b0e0e6&labelColor=white">
+    </a>
+</p>
+
   ### Layout 🚧
   <img alt="imageBeautysalon" src=".github/Beautysalon..png" width="100%">
   <p align="center">
@@ -22,7 +33,7 @@
 </div>
 
 ## Licença ⚖️
-This project is under the MIT license. See the archive [LICENSE]() for more details.
+This project is under the MIT license. See the archive [LICENSE](https://github.com/GabrielMedradoS/BeautySalon/blob/master/License) for more details.
 
 ## Autor ✍🏾
 
