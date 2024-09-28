@@ -19,7 +19,7 @@
 </p>
 
   ### Layout 🚧
-  <img alt="imageBeautysalon" src=".github/Beautysalon..png" width="100%">
+  <img alt="imageBeautysalon" src=".github/github image.png" width="100%">
 
 ## Projeto 💻
 - Criar uma landing page de um salão de beleza com a ajuda do prof Mayk Brito Rocketseat
